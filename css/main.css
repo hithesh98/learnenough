@@ -487,3 +487,13 @@ h2 + p {
   padding-top: 2em;
   font-size: 0.8em;
 }
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+}
