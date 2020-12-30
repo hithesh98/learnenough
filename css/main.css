@@ -508,6 +508,51 @@ h2 + p {
   .header-logo {
     left: auto;
   }
+  /*Home Styles*/
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    flex: 1;
+  }
+  .bio-box {
+    float: none;
+    width: auto;
+    font-size: 1.3rem;
+  }
+
+  /*Gallery Styles*/
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
+  .blog-cols {
+    flex-direction: column;
+  }
+  .blog-recent {
+    flex: 1;
+    text-align: center;
+  }
+  /*Blog Styles*/
   .post-aside {
     display: none;
   }
