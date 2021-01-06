@@ -152,12 +152,16 @@ h2 + p {
 .header-logo:active {
   background-color: #ed6e2f;
 }
+/*Dropdown Styles*/
 .dropdown {
   position: relative;
 }
 .dropdown:hover .drop-menu {
   display: block;
 
+}
+.dropdown:hover .drop-trigger:after {
+  border-color: #ed6e2f transparent transparent;
 }
 .drop-trigger {
   display: inline-block;
@@ -203,9 +207,27 @@ h2 + p {
 .drop-menu li:first-child {
   border-radius: 5px 5px 0 0;
 }
+.drop-menu li:last-child {
+  border-radius: 0 0 5px 5px;
+}
 .drop-menu a {
   color: #333;
   display: block;
+  text-transform: none;
+  white-space: nowrap;
+  padding: 0.5em 2em 0.5em 1em;
+}
+.drop-menu a:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: #333;
+}
+/*Hide in Footer*/
+.footer .dropdown:hover .drop-menu,
+.footer .drop-trigger:after {
+  display: none;
+}
+.footer .drop-trigger {
+  padding-right: 0;
 }
 /*Footer Styles*/
 .footer {
